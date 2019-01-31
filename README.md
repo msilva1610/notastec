@@ -16,7 +16,7 @@ yum update -y
 ```
 yum install epel-release
 
-˜˜˜
+```
 
 ### Instalar o Redis
 
