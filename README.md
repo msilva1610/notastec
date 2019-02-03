@@ -42,3 +42,10 @@ systemctl enable redis
 redis-cli ping
 
 ```
+
+## Windows
+### Habilitar o Hyper-v
+
+```
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+```
