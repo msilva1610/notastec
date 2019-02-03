@@ -56,3 +56,8 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
 ```
 
+## Vagrnat
+
+```
+vagrant plugin install vagrant-vmware-desktop
+```
