@@ -56,8 +56,17 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
 ```
 
-## Vagrnat
+## Vagrant
 
 ```
 vagrant plugin install vagrant-vmware-desktop
+```
+Para funcionar ~e necessário comprar o plug in de licença que custa $75
+
+## CentOS7 Minimal
+O Centos minimal image vem com poucos pacotes. Segue os comandos para configuração.
+
+```
+yum whatprovides netstat
+yum install net-tools
 ```
