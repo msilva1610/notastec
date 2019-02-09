@@ -70,3 +70,46 @@ O Centos minimal image vem com poucos pacotes. Segue os comandos para configura�
 yum whatprovides netstat
 yum install net-tools
 ```
+
+## Instalando o Virtualbox no Ubuntu com dual boot
+### Instalando os pré requisitos
+
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+### Configurando o Apt repositório
+
+```
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+```
+
+### Oracle VirtualBox PPA
+
+```
+sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian xenial contrib"
+``` 
+
+### Instalar o virtualbox
+
+```
+sudo apt-get update
+sudo apt-get install virtualbox-5.2
+virtualbox
+```
+### Tive o seguinte erro
+
+```
+~$ sudo /sbin/vboxconfig
+vboxdrv.sh: Building VirtualBox kernel modules
+vboxdrv.sh: Starting VirtualBox services
+vboxdrv.sh: Building VirtualBox kernel modules
+vboxdrv.sh: failed: modprobe vboxdrv failed. Please use 'dmesg' to find out why
+There were problems setting up VirtualBox.  To re-start the set-up process, run   /sbin/vboxconfig as root
+```
+### Como foi resolvido
+
+Tive que entrar na bios de desabilitar o security boot UEFI.
+
+link: https://ubuntuforums.org/showthread.php?t=2350741
