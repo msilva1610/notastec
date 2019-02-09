@@ -110,6 +110,6 @@ There were problems setting up VirtualBox.  To re-start the set-up process, run 
 ```
 ### Como foi resolvido
 
-Tive que entrar na bios de desabilitar o security boot UEFI.
+Tive que entrar na bios e desabilitar o security boot UEFI.
 
 link: https://ubuntuforums.org/showthread.php?t=2350741
